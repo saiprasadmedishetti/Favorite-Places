@@ -1,0 +1,11 @@
+* {
+  scrollbar-color: $scroll-bg transparentize(white, 1);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: $scroll-bg;
+  border-radius: 10px;
+}

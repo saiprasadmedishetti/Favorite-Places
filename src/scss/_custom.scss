@@ -1,0 +1,47 @@
+// @import "variables";
+
+.sidebar {
+  .search {
+    padding: 1rem 1rem 0.5rem;
+    flex-shrink: 0;
+  }
+  .nav {
+    padding: 0 1rem;
+    flex: 1;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .nav-link {
+    color: inherit;
+    &:hover:not(.active) {
+      background-color: $light-gray-1;
+    }
+  }
+}
+.content .card {
+  max-width: 800px;
+}
+.banner {
+  max-width: 300px;
+}
+.card-img-top {
+  max-width: 100%;
+}
+.text-label {
+  display: inline-block;
+  min-width: 150px;
+  &::after {
+    content: ":";
+    float: right;
+    padding-right: 2rem;
+  }
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
